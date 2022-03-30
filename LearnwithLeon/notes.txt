@@ -1,0 +1,128 @@
+this is for taking notes for the #100Dev
+
+2nd Day
+Anki
+-active recall
+-Take questions is better than taking notes 
+-what stuff to put on Anki ? 
+-markup langauge vs programming language 
+-mozilla developer network 
+
+
+-SEO service needs correct html tags ? 
+-CSS Battle
+<h1> <p> <span>--like one words 
+<pre> <br> <hr> <a> <nav> <a href= target="_blank_"> 
+<em> <strong> <ol><li> <ul> 
+<div> <section> <article> <aside> <header> <footer>
+<div> vs <section>
+<strong> <b> and <em> vs <i> --- stress vs stylze
+<header> vs <head>
+#1 place where engineers start --? 
+<article> is for things that can be independently redistributed
+
+<header> <nav> <article> <section> <footer> <aside>
+
+CSS - ID, class, type
+class 
+.awesome{
+}
+ID
+#numberid{
+}
+normalize.css
+
+<a href=> can use id to link to parts of the same percentag, create new page for lin
+
+
+Lesson 3 (Getting to Know CSS)
+size: pixel, percentage and em.
+
+Lesson 4 (Box Model)
+display property-block,inline,inline-block,none
+padding, border, margin
+
+height,width, padding, border,margin
+div - box-sizing(moz,webkit) == padding-box,content box, border box <-best to use
+radius,color,display,font
+*:before,
+*:after{ content,display}
+
+borderbox(width does not change when padding change)
+ vs content box
+
+
+Lesson 5 (positioning)
+float- then need to set width value 
+clearing floats, contain float (clearfix-clear)
+clear both before and after
+float: left or right
+contain float
+clearfix
+use inline-block to arrange instead
+position property-relative, absolute
+
+Lesson 6  (Working with Typography)
+font-based and text-vased
+font-* or text-*
+family,size,style,variant,weight and line height ,variants
+align, decorate (line,underline,none), indent, transform and space text
+
+Lesson 7 (Setting Backgrounds & Gradients)
+size, repeat, Gradients, multiple
+cover& contain
+background-clip: padding-box;
+  background-origin: border-box;
+
+
+Lesson 8 (Lists)
+inline-block to make list float
+organize anchors in nav as an unordered list 
+
+can also use inline-block : display to make horizontal along with
+making the anchor part of a unordered list 
+
+Lesson 10(Creatin Forms)
+Forms, Fieldset - Div, Labels and Input, Submit Button
+
+Lesson 11 (Organizing Data with Tables)
+always include alt for images
+
+Questions: 
+Is putting the anchors in Nav into a list a good idea? I don't understand how it makes
+it more organized. When do i float vs inline ? Is there more concrete guidlines ? 
+CSS gets real messy real fast, unlike HTML which have a hierachy structure.
+Any tips to keep neat ?\
+
+
+
+
+Class 3- gotta make a webpage lite 
+how to submit hw.
+make a plan  
+Glitch -google docs for code 
+progressive-enhancement
+
+<form>
+  <label for="zebra"> First Name: </label>
+  <input id="zebra" type="text">
+</form>
+
+
+Class 4
+html for high speed internet accesss
+Css -inline (for emails), in the head (critical path rending), in a seperate file 
+section > p{
+  p must be direct child of section
+}
+section p{
+  not need to be direct child
+}
+
+p + p{
+  sibling relationship
+}
+!important
+h4lab, learnlayout.com
+
+sjay!

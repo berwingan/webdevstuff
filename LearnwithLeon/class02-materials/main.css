@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* START HERE */ 
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Arrangement */
+/* * { 
+  outline: 1px solid rgb(0, 0, 0);
+  outline-offset: -1px;
+} */
+
+header h1{
+  float:left;
+  width: 10%;
+}
+header span{
+  float: left;
+  width: 10%;
+}
+header nav{
+  float: left;
+  width: 70%;
+}
+header li{
+  display: inline-block;
+  width: 11%;
+}
+
+.welcome-date h2{
+  float:left;
+  width: 50%;
+}
+.welcome-date time{
+  float:right;
+  width:50%;
+}
+
+.main-article,
+.canada,
+.worklife,
+.health,
+.culture,
+.non-main-article{
+  float:left;
+  width: 45%;
+  margin: 0 1.5%;
+}
+.non-main-article,
+.main-article{
+  height: 350px;
+}
+
+.canada,
+.worklife,
+.health,
+.culture{
+  height:175px;
+}
+
+
+/* Others */
+
+
+a{
+  text-decoration: none;
+}
+
+.col-1-3{
+	width: 33.33%;
+  padding-left:15px;
+  padding-right: 15px;
+}
+.col-2-3{
+	width: 66.66%;
+}
+.col-2-3,
+.col-1-3{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+/* Background Picture and Picture Sizing*/
+img{
+  width:100%;
+}
+
+.main-article{
+  background-image: url(https://ichef.bbci.co.uk/news/640/cpsprodpb/1676D/production/_113931029_composite.jpg);
+}
+
+.canada{
+  background-image: url(https://c.files.bbci.co.uk/D39B/production/_113917145_gettyimages-144092698.jpg);
+}
+.worklife{
+  background-image: url(https://ychef.files.bbci.co.uk/976x549/p08ngz84.jpg);
+}
+.culture{
+  background-image: url(https://i.guim.co.uk/img/media/c2e2ffa340c62ddaca6428e68ce834e0544d8d4d/0_369_1734_1040/master/1734.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=2ef974fff9699a81900716f859ef52e7);
+}
+.health{
+  background-image: url(https://c.files.bbci.co.uk/1771/production/_113910060_gettyimages-1219401083.jpg);
+}
+
+.main-article,.health,.culture,.worklife,.canada{
+  background-repeat: no-repeat;
+}
+.main-article{
+  background-size: 100%;
+}
+.health,.culture,.worklife,.canada{
+  background-size: 100%;
+}
+
+
+
+/*Positioning Stuff */
+.welcome-date{
+  margin-top: 20px;
+}
+/*Typography*/
+.welcome-date h2{
+  width:40%;
+  font-size: 27px;
+  font-weight:bolder;
+  margin-left:20px;
+  color:rgb(21, 21, 21);
+}
+
+.welcome-date time{
+  text-align: right;
+  color: grey;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.main-article h3{
+  color:white;
+  -webkit-text-stroke: 0.2px black;
+  font-size: 35px;
+  margin-top: 240px;
+}
+.main-article p{
+  font-size: 19px;
+  margin-top: 10px;
+  color:rgb(121, 121, 121);
+  -webkit-text-stroke: 0.2px black;
+}
+.main-article span{
+  margin-top: 100px;
+  color:rgb(121, 121, 121);
+  -webkit-text-stroke: 0.2px black;
+}
+.main-article p,.main-article h3, .main-article span{
+  margin-left: 23px;
+}
+
+footer h3{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+footer p{
+  margin-top: 5px;
+  font-size: 18px;
+}
+footer span{
+  margin-top:40px;
+  color:rgb(69, 69, 69);
+}
+
+footer h2{
+  padding-top:30px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-weight: bolder;
+  font-size: 23px;
+}
+
+.non-main-article h3{
+  color:white;
+  -webkit-text-stroke: 0.4px black;
+  font-size: 20px;
+  margin-left: 11px;
+  margin-top: 90px;
+}
+.non-main-article span{
+  margin-top: 10px;
+  margin-left: 11px;
+  color:grey;
+  -webkit-text-stroke: 0.4px black;
+}

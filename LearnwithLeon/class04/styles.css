@@ -1,0 +1,53 @@
+body{
+    width: 75%;
+    margin: auto;
+    border: 5px solid rgb(46, 243, 56);
+    background-color:rgb(87, 225, 238);
+
+}
+h1,
+nav{
+    text-align: center;
+    color:white;
+}
+
+h2,
+p{
+    color:white;
+}
+
+li{
+    display: inline;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+header li+li{
+    color:greenyellow;
+    text-decoration: underline;
+}
+
+img{
+    float: right;
+    height: 300px;
+    width: auto;
+    padding-right: 5%;
+}
+
+p{
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h2{
+    padding-left: 5%;
+}
+
+.seperator{
+    color:grey;
+    text-decoration: none;
+}
+
+footer li{
+    color:rgb(46, 158, 121)
+}
