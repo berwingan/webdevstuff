@@ -1,0 +1,13 @@
+const Farm(props)=>{
+    x
+    x
+    x
+    return(
+        <> or <Fragments> 
+    )
+}
+
+<Farm text={aasd} anim={()=>function()} />
+arrays =find,filter,map
+
+props.map(note=> <li>{note.content}</li>)

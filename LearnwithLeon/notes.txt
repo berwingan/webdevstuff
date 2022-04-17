@@ -126,3 +126,30 @@ p + p{
 h4lab, learnlayout.com
 
 sjay!
+
+class 5
+helvetica standard
+margin
+border
+padding 
+height,width
+
+to center- margin: 0 auto;
+css/normalize.css
+css/reset.css
+
+responsivenes @media
+
+class 7,
+fluid
+elasticity -ems and rem  font-size:1em,,,, 1rem - get size from html -- 62.5%
+content decisions---- @media queries
+<meta name="viewport" content="width=device-width, initial-scale=1"
+css-tricks.com: complete guid to flexbox
+flexboxgroggy.com
+
+
+
+
+
+
