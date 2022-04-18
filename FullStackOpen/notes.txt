@@ -11,3 +11,35 @@ const Farm(props)=>{
 arrays =find,filter,map
 
 props.map(note=> <li>{note.content}</li>)
+props.map((notes,i)=> <Parts key={notes.id} note={notes})  <-- never use i for the key
+
+2b: Forms
+const addNote=(event)=>{
+event.preventDefault()
+console.log('button clicked',event.target)
+}
+
+<form onSubmit={addNote}>
+<input />
+<button type="submit">save</button>
+</form>
+
+--controlled components
+never mutate state directly
+
+db.json - axios library
+npm install axios
+npm install json-server --save-dev
+"server": "json-server -p3001 --watch db.json"
+npm run server
+
+  const hook = () => {
+    console.log("effect");
+    axios
+      .get("http://localhost:3001/notes")
+      .then((response) => {
+        console.log("promise fulfilled");
+        setNotes(response.data);
+    });
+  };
+  useEffect(hook, []);
