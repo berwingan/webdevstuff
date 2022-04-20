@@ -148,6 +148,16 @@ content decisions---- @media queries
 css-tricks.com: complete guid to flexbox
 flexboxgroggy.com
 
+display:flex;
+justify-content:
+align-item: 
+flex-direction: 
+order:
+align-self:
+flex-wrap:
+flex-flow:
+align-content:
+Bootstrap vs Tailwind, Bulma,Foundation, Miligram, Material-UI <<-- what is used on anchor
 
 
 

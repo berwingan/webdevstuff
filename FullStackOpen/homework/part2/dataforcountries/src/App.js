@@ -22,6 +22,21 @@ const Display = ({ country,filter,setFilter }) => {
 };
 
 const DisplayIndividualCountry=({country})=>{
+  const api_key = process.env.REACT_APP_WEATHER
+  const request_add =
+    "https://api.openweathermap.org/data/2.5/weather?q={" +
+    country.capital +
+    "}&appid={"+api_key+"}";
+  console.log(request_add)
+  let weather = {}
+  const weatherhook = () => {
+    console.log("weathereffect");
+    axios.get(request_add).then((response) => {
+      console.log("weather promise fulfilled");
+      weather = response.data;
+    });
+  };
+  useEffect(weatherhook, []);
   const flagof= "Flag of " + country.name.common
   return (
     <>
@@ -58,7 +73,6 @@ const Countries = ({ countriesToShow,filter,setFilter }) => {
 
 const App = () => {
   const [countries, setCountries] = useState([]);
-  const [weather, setWether] = useState([]);
   const [filter, setFilter] = useState("");
 
   const hook = () => {

@@ -40,6 +40,46 @@ npm run server
       .then((response) => {
         console.log("promise fulfilled");
         setNotes(response.data);
-    });
+      })
+      .catch(error=>{
+        console.log('fail ${}')
+      })
   };
   useEffect(hook, []);
+
+  .post --add new note
+  .puut -- replace existing note
+
+
+axios
+  .put 
+  .then
+  .then
+
+Part3- Backend
+NodeJS & Express 
+npm init
+    "start": "node index.js" <-- in the package.json
+run using 
+node index.js
+npm install express 
+
+response.send
+response.json
+nodemon-- changes to application code now cause server restart
+npm install --save-dev nodemon
+node_modules/.bin/nodemon index.js
+add ("dev": "nodemon index.js",) to package.json
+npm run dev 
+postman
+
+----
+const express = require("express");
+const app = express();
+app.use(express.json());
+...
+const PORT = 3001;
+app.listen(PORT);
+console.log(`Server running on port ${PORT}`);
+----
+
